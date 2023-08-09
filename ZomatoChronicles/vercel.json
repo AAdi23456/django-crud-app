@@ -1,0 +1,14 @@
+{
+    "builds":[
+        {
+            "src":"ZomatoChronicles/wsgi.py",
+            "use":"@vercel/python"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"ZomatoChronicles/wsgi.py"
+        }
+    ]
+}
